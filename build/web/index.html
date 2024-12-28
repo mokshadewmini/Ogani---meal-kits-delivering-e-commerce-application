@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ogani Template">
+        <meta name="keywords" content="Ogani, unica, creative, html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ogani </title>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+ <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    </script>
+        <!-- Css Styles -->
+        <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- Bootstrap JS bundle including Popper.js --> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="icon" href="https://img.freepik.com/free-vector/botanical-capital-letter-o-vector_53876-172664.jpg" type="image/x-icon">
+    </head>
+
+    <body onload="checkSignIn();">
+        <!-- Page Preloder -->
+        <div id="preloder">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Humberger Begin -->
+        <div class="humberger__menu__overlay"></div>
+        <div class="humberger__menu__wrapper">
+            <div class="humberger__menu__logo">
+                <a href="#"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="humberger__menu__cart">
+                <ul>
+                    <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                </ul>
+                <div class="header__cart__price">item: <span>$150.00</span></div>
+            </div>
+            <div class="humberger__menu__widget">
+                <div class="header__top__right__language">
+                    <img src="img/language.png" alt="">
+                    <div>English</div>
+                    <span class="arrow_carrot-down"></span>
+                    <ul>
+                        <li><a href="#">Sinhala</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+                <div class="header__top__right__auth">
+                    <a href="signIn.html" id="st-quick-link-li-1"><i class="fa fa-user"></i> Login</a>
+                    <a href="signUp.html" id="st-quick-link-li-2"><i class="fa fa-user"></i> Sign Up</a>
+                </div>
+            </div>
+            <nav class="humberger__menu__nav mobile-menu">
+                <ul>
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./search.html">Shop</a></li>
+
+                    
+                    <li><a href="./my-account.html">Profile</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="mobile-menu-wrap"></div>
+            <div class="header__top__right__social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            </div>
+            <div class="humberger__menu__contact">
+                <ul>
+                    <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                    <li>Get your fresh items today</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Humberger End -->
+
+        <!-- Header Section Begin -->
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="header__top__left">
+                                <ul>
+                                    <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                                    <li>Promotions are availble today. Enjoy your super meal</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="header__top__right">
+                                <div class="header__top__right__social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                </div>
+                                <div class="header__top__right__language">
+                                    <img src="img/language.png" alt="">
+                                    <div>English</div>
+                                    <span class="arrow_carrot-down"></span>
+                                    <ul>
+                                        <li><a href="#">Sinhala</a></li>
+                                        <li><a href="#">English</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__top__right__auth">
+                                    <a href="signIn.html" id="st-quick-link-li-1" style="display: inline-block; margin-right: 10px;">Login</a>
+                                    <a href="signUp.html" id="st-quick-link-li-2" style="display: inline-block;">Sign Up</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="header__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./search.html">Shop</a></li>
+
+                               
+                                <li><a href="./my-account.html">Profile</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="header__cart">
+                            <ul>
+                                <li><a href="./shoping-cart.html"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                                <li><a href="./shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                                <li><a href="./shoping-cart.html"><i class="fa fa-money"></i> </a></li>
+                            </ul>
+                            <div class="header__cart__price">Purchasing History</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="humberger__open">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Hero Section Begin -->
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="hero__categories">
+                            <div class="hero__categories__all">
+                                <i class="fa fa-bars"></i>
+                                <span>All Meal Kits</span>
+                            </div>
+                            <ul>
+                                <li><a href="#">Vegetarian</a></li>
+                                <li><a href="#">Non-Vegetarian</a></li>
+                                <li><a href="#">Gluten-Free</a></li>
+                                <li><a href="#">Low-Carb/Keto</a></li>
+                                <li><a href="#">Fitness Meals</a></li>
+                                <li><a href="#">Weight Loss Kits</a></li>
+                                <li><a href="#">Quick & Easy</a></li>
+                                <li><a href="#">Kids-Friendly Meals</a></li>
+                                <li><a href="#">Dried Foods</a></li>
+                                <li><a href="#">Nutri Drinks</a></li>
+                                <li><a href="#">Supplements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="hero__search">
+                            <div class="hero__search__form">
+                                <form action="#">
+                                    <div class="hero__search__categories">
+                                        All Categories
+                                        <span class="arrow_carrot-down"></span>
+                                    </div>
+                                    <input type="text" placeholder="What do yo u need?">
+                                    <button type="submit" class="site-btn">SEARCH</button>
+                                </form>
+                            </div>
+                            <div class="hero__search__phone">
+                                <div class="hero__search__phone__icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="hero__search__phone__text">
+                                    <h5>+94 111 345 654</h5>
+                                    <span>support 24/7 time</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__item set-bg" data-setbg="https://record.adventistchurch.com/wp-content/uploads/2019/02/Making-healthy-food-fun-for-kids.jpg">
+                            <div class="hero__text">
+                                <span>Get your meal kit today..</span>
+                                <h2>Ingredients <br />100% Organic</h2>
+                                <p>We deliver fresh, organic ingredients <br/>making your meal prepping effortless and nutritrious</p>
+                                <a href="#" class="primary-btn">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- Categories Section Begin -->
+        <section class="categories">
+            <div class="container">
+                <div class="row">
+                    <div class="categories__slider owl-carousel">
+                        <div class="col-lg-3">
+                            <div class="categories__item set-bg" data-setbg="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2017_35/2138001/facts-vegetarian-brecher-better.jpg">
+                                <h5><a href="#">Vegetarian</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="categories__item set-bg" data-setbg="https://www.india.com/wp-content/uploads/2014/09/non-veg.jpg">
+                                <h5><a href="#">Non-Vegetarian</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="categories__item set-bg" data-setbg="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/gettyimages-842866054-7f28bbd.jpg?quality=90&resize=400,363">
+                                <h5><a href="#">Gluten-Free</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="categories__item set-bg" data-setbg="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOa6TqOOXGXeuJ9sb24pDbRNDFyMTPVxGS1g&s">
+                                <h5><a href="#">Fitness Meals/Keto</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="categories__item set-bg" data-setbg="https://mealkitscanada.ca/assets/img/articles/weight-loss.jpg">
+                                <h5><a href="#">Weight Loss Kits</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="categories__item set-bg" data-setbg="https://m.media-amazon.com/images/I/61FEPNt+9iS.jpg">
+                                <h5><a href="#">Quick & Easy</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="categories__item set-bg" data-setbg="https://www.meghantelpner.com/wp-content/uploads/2024/01/Silly-Face-Hummus-Toasts-1.jpg">
+                                <h5><a href="#">Kids-Friendly Meals</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="categories__item set-bg" data-setbg="https://media.post.rvohealth.io/wp-content/uploads/2020/01/dried-fruit-nuts-raisins-732x549-thumbnail.jpg">
+                                <h5><a href="#">Dried Foods</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="categories__item set-bg" data-setbg="https://m.media-amazon.com/images/I/61y0Rpd-AHL.jpg">
+                                <h5><a href="#">Nutri Drinks</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="categories__item set-bg" data-setbg="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiFP3AzIZOiP7dK27YoXGJrXxtuVo1StEXNNaBCRGUnWYp7a4gmzk3rfWAVpY8Mp8js_I&usqp=CAU">
+                                <h5><a href="#">Supplements</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Categories Section End -->
+
+        <!-- Featured Section Begin -->
+        <section class="featured spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>Featured Product</h2>
+                        </div>
+                        <div class="featured__controls">
+                            <ul>
+                                <li class="active" data-filter="*">All</li>
+                                <li data-filter=".oranges">Vegetarian</li>
+                                <li data-filter=".fresh-meat">Non-Vegan</li>
+                                <li data-filter=".vegetables">Gluten Free</li>
+                                <li data-filter=".fastfood">Low-Carb/Keto</li>
+                                <li data-filter=".fastfood">Fitness Meals</li>
+                                <li data-filter=".oranges">Weight Loss Kits</li>
+                                <li data-filter=".fresh-meat">Quick & Easy</li>
+                                <li data-filter=".vegetables">Kids-Friendly Meals</li>
+                                <li data-filter=".fastfood">Dried Foods</li>
+                                <li data-filter=".vegetables">Nutri Drinks</li>
+                                <li data-filter=".fastfood">Supplements</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single product Start -->
+                <div class="row featured__filter">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" id="st-product-image-1" data-setbg="img/featured/feature-1.jpg">
+                                
+                                <ul class="featured__item__pic__hover">
+                                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                    <li><a id="st-product-link-1" href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6 id="st-product-title-1"><a  href="">Crab Pool Security</a></h6>
+                                <h5 id="st-product-price-1">$30.00</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" id="st-product-image-2" data-setbg="img/featured/feature-7.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                    <li><a id="st-product-link-2"  href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6 id="st-product-title-2"><a href="./single-product.html">Crab Pool Security</a></h6>
+                                <h5 id="st-product-price-2">$30.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" id="st-product-image-3" data-setbg="img/featured/feature-8.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                    <li><a id="st-product-link-3"  href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6 id="st-product-title-3"><a href="./single-product.html">Crab Pool Security</a></h6>
+                                <h5 id="st-product-price-3">$30.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" id="st-product-image-4" data-setbg="img/featured/feature-8.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                    <li><a id="st-product-link-4" href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6 id="st-product-title-4"><a id="st-product-link-4" href="./single-product.html"></a></h6>
+                                <h5 id="st-product-price-4">$30.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" id="st-product-image-5" data-setbg="img/featured/feature-1.jpg">
+                                
+                                <ul class="featured__item__pic__hover">
+                                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                    <li><a id="st-product-link-5" href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6 id="st-product-title-5"><a  href="">Crab Pool Security</a></h6>
+                                <h5 id="st-product-price-5">$30.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" id="st-product-image-6" data-setbg="img/featured/feature-7.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                    <li><a id="st-product-link-6"  href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6 id="st-product-title-6"><a href="./single-product.html">Crab Pool Security</a></h6>
+                                <h5 id="st-product-price-6">$30.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" id="st-product-image-7" data-setbg="img/featured/feature-8.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                    <li><a id="st-product-link-7"  href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6 id="st-product-title-7"><a href="./single-product.html">Crab Pool Security</a></h6>
+                                <h5 id="st-product-price-7">$30.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" id="st-product-image-8" data-setbg="img/featured/feature-8.jpg">
+                                <ul class="featured__item__pic__hover">
+                                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                    <li><a id="st-product-link-8" href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6 id="st-product-title-8"><a id="st-product-link-4" href="./single-product.html"></a></h6>
+                                <h5 id="st-product-price-8">$30.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <!-- Single product End -->
+
+        <!-- Banner Begin -->
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="banner__pic">
+                            <img src="img/banner/banner-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="banner__pic">
+                            <img src="img/banner/banner-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner End -->
+
+       
+
+        <!-- Blog Section Begin -->
+        <section class="from-blog spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title from-blog__title">
+                            <h2>From The Blog</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic">
+                                <img src="https://cdn.prod.website-files.com/622154d5a1d5c02e596f4511/632cbabf75e6fa534a1bf0d3_62ec23c970deca3b27306323_Blog_thumb-46.jpeg" alt="">
+                            </div>
+                            <div class="blog__item__text">
+                                <ul>
+                                    <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                    <li><i class="fa fa-comment-o"></i> 5</li>
+                                </ul>
+                                <h5><a href="#">Cooking tips make cooking simple</a></h5>
+                                <p>At Fresh Harvest Organics, we believe that cooking should be as enjoyable as it is nutritious. That’s why we offer expert cooking tips that make preparing your meals effortless. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic">
+                                <img src="https://simply-delicious-food.com/wp-content/uploads/2022/09/Breakfast-board28.jpg" alt="">
+                            </div>
+                            <div class="blog__item__text">
+                                <ul>
+                                    <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                    <li><i class="fa fa-comment-o"></i> 5</li>
+                                </ul>
+                                <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
+                                <p>Each of these options can be scaled up for a crowd and offers a mix of flavors and customization to keep things interesting for your guests </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="blog__item">
+                            <div class="blog__item__pic">
+                                <img src="https://images.healthshots.com/healthshots/en/uploads/2023/05/10200007/exercise.jpg" alt="">
+                            </div>
+                            <div class="blog__item__text">
+                                <ul>
+                                    <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                    <li><i class="fa fa-comment-o"></i> 5</li>
+                                </ul>
+                                <h5><a href="#">These exercises boost your energy</a></h5>
+                                <p>Engaging in exercises that boost energy can be transformative, not just for physical health but also for improving mental clarity and emotional well-being. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section End -->
+
+        <!-- Footer Section Begin -->
+        <footer class="footer spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer__about">
+                            <div class="footer__about__logo">
+                                <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li>Address: Colombo, Sri Lanka</li>
+                                <li>Phone: +94 111 345 654</li>
+                                <li>Email: ogani@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                        <div class="footer__widget">
+                            <h6>Useful Links</h6>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">About Our Shop</a></li>
+                                <li><a href="#">Secure Shopping</a></li>
+                                <li><a href="#">Delivery infomation</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Our Sitemap</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Who We Are</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Innovation</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__widget">
+                            <h6>Join Our Newsletter Now</h6>
+                            <p>Get E-mail updates about our latest shop and special offers.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter your mail">
+                                <button type="submit" class="site-btn">Subscribe</button>
+                            </form>
+                            <div class="footer__widget__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer__copyright">
+                            <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <a href="https://colorlib.com" target="_blank"></a>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                            <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+
+        <!-- Js Plugins -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+       
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/sign-in.js"></script>
+       
+
+
+
+    </body>
+
+</html>

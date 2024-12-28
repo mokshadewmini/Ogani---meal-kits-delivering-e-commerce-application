@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ogani Template">
+        <meta name="keywords" content="Ogani, unica, creative, html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ogani </title>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ysbRao+4MufDLcL7SrsFGmLgDcdGGhjPPpQNKzH/A6m0WLEsSk8av6LQik3WWzS" crossorigin="anonymous">
+        <!-- SweetAlert2 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+
+        <!-- SweetAlert2 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <style>
+            .image-upload {
+                display: flex;
+                gap: 10px;
+            }
+            .image-upload .box {
+                flex: 1;
+                min-width: 200px;
+                border: 2px dashed #ccc;
+                border-radius: 5px;
+                padding: 10px;
+                text-align: center;
+                cursor: pointer;
+                position: relative;
+            }
+            .image-upload .box input[type="file"] {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+            }
+            .image-upload .box span {
+                display: block;
+                margin-top: 50px;
+                color: #aaa;
+            }
+        </style>
+        <link rel="icon" href="https://img.freepik.com/free-vector/botanical-capital-letter-o-vector_53876-172664.jpg" type="image/x-icon">
+    </head>
+
+    <body onload="loadeFeatuers();">
+        <!-- Page Preloder -->
+        <div id="preloder">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Humberger Begin -->
+        <div class="humberger__menu__overlay"></div>
+        <div class="humberger__menu__wrapper">
+            <div class="humberger__menu__logo">
+                <a href="#"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="humberger__menu__cart">
+                <ul>
+                    <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                </ul>
+                <div class="header__cart__price">item: <span>$150.00</span></div>
+            </div>
+            <div class="humberger__menu__widget">
+                <div class="header__top__right__language">
+                    <img src="img/language.png" alt="">
+                    <div>English</div>
+                    <span class="arrow_carrot-down"></span>
+                    <ul>
+                        <li><a href="#">Sinhala</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+                <div class="header__top__right__auth">
+                    <a href="#"><i class="fa fa-user"></i> Login</a>
+                </div>
+            </div>
+            <nav class="humberger__menu__nav mobile-menu">
+                <ul>
+                    <li ><a href="./index.html">Home</a></li>
+                    <li><a href="./shop-grid.html">Shop</a></li>
+
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="mobile-menu-wrap"></div>
+            <div class="header__top__right__social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            </div>
+            <div class="humberger__menu__contact">
+                <ul>
+                    <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                    <li>Get your fresh items today</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Humberger End -->
+
+        <!-- Header Section Begin -->
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="header__top__left">
+                                <ul>
+                                    <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                                    <li>Promotions are availble today. Enjoy your super meal</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="header__top__right">
+                                <div class="header__top__right__social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                </div>
+                                <div class="header__top__right__language">
+                                    <img src="img/language.png" alt="">
+                                    <div>English</div>
+                                    <span class="arrow_carrot-down"></span>
+                                    <ul>
+                                        <li><a href="#">Sinnhala</a></li>
+                                        <li><a href="#">English</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__top__right__auth">
+                                    <a href="#"><i class="fa fa-user"></i> Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="header__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./shop-grid.html">Shop</a></li>
+
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="header__cart">
+                            <ul>
+                                <li><a href="./shoping-cart.html"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                                <li><a href="./shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                                <li><a href="./shoping-cart.html"><i class="fa fa-money"></i> </a></li>
+                            </ul>
+                            <div class="header__cart__price">Purchasing History</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="humberger__open">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Hero Section Begin -->
+        <section class="hero hero-normal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="hero__categories">
+                            <div class="hero__categories__all">
+                                <i class="fa fa-bars"></i>
+                                <span>All Meal Kits</span>
+                            </div>
+                            <ul>
+                                <li><a href="#">Vegetarian</a></li>
+                                <li><a href="#">Non-Vegetarian</a></li>
+                                <li><a href="#">Gluten-Free</a></li>
+                                <li><a href="#">Low-Carb/Keto</a></li>
+                                <li><a href="#">Fitness Meals</a></li>
+                                <li><a href="#">Weight Loss Kits</a></li>
+                                <li><a href="#">Quick & Easy</a></li>
+                                <li><a href="#">Kids-Friendly Meals</a></li>
+                                <li><a href="#">Dried Foods</a></li>
+                                <li><a href="#">Nutri Drinks</a></li>
+                                <li><a href="#">Supplements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="hero__search">
+                            <div class="hero__search__form">
+                                <form action="#">
+                                    <div class="hero__search__categories">
+                                        All Categories
+                                        <span class="arrow_carrot-down"></span>
+                                    </div>
+                                    <input type="text" placeholder="What do yo u need?">
+                                    <button type="submit" class="site-btn">SEARCH</button>
+                                </form>
+                            </div>
+                            <div class="hero__search__phone">
+                                <div class="hero__search__phone__icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="hero__search__phone__text">
+                                    <h5>+94 111 345 654</h5>
+                                    <span>support 24/7 time</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- Breadcrumb Section Begin -->
+        <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="breadcrumb__text">
+                            <h2>Product Registration</h2>
+                            <div class="breadcrumb__option">
+                                <a href="./index.html">Home</a>
+                                <span>Product Registration</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Breadcrumb Section End -->
+        <!--        <div id="message" role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+                    <div class="toast-header">
+                        <img src="..." class="rounded mr-2" alt="...">
+                        <strong class="mr-auto">Bootstrap</strong>
+                        <small>11 mins ago</small>
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="toast-body">
+                        Hello, world! This is a toast message.
+                    </div>
+                </div>-->
+        <p class="text-danger" id="message"></p>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; display: flex; flex-wrap: wrap; gap: 20px;">
+            <!-- Meal Kit Name -->
+            <div style="flex: 1; min-width: 250px;">
+                <label for="meal-kit-name" style="display: block; margin-bottom: 10px;">Meal Kit Name:</label>
+                <input type="text" id="mealKit" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <!-- Category Dropdown -->
+            <div style="flex: 1; min-width: 250px;">
+                <label style="display: block; margin-bottom: 10px;">Category:</label>
+                <select id="category-select" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;">
+                    <option value="0">Select Category</option> 
+                </select>
+            </div>
+
+            <!-- Ingredients Dropdown -->
+            <div style="flex: 1; min-width: 250px;">
+                <label  style="display: block; margin-bottom: 10px;">Ingredients:</label>
+                <select id="ingredients-select"  style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;">
+                    <option value="0">Select Ingredients</option> 
+
+                </select>
+            </div>
+
+            <!-- Calories -->
+            <div style="flex: 1; min-width: 250px;">
+                <label for="calories" style="display: block; margin-bottom: 10px;">Calories Amount:</label>
+                <input type="number" id="calories" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <!-- Fat -->
+            <div style="flex: 1; min-width: 250px;">
+                <label for="fat" style="display: block; margin-bottom: 10px;">Fat Amount (g):</label>
+                <input type="number" id="fat" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <!-- Carbohydrate -->
+            <div style="flex: 1; min-width: 250px;">
+                <label for="carbohydrate" style="display: block; margin-bottom: 10px;">Carbohydrate Amount (g):</label>
+                <input type="number" id="carbohydrate" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <!-- Protein -->
+            <div style="flex: 1; min-width: 250px;">
+                <label for="protein" style="display: block; margin-bottom: 10px;">Protein Amount (g):</label>
+                <input type="number" id="protein"  style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <!-- Vitamins and Minerals -->
+            <div style="flex: 1; min-width: 250px;">
+                <label for="vitamins-minerals" style="display: block; margin-bottom: 10px;">Vitamins and Minerals Amount (g):</label>
+                <input type="number" id="vitamins-minerals"  style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <!-- Price -->
+            <div style="flex: 1; min-width: 250px;">
+                <label for="vitamins-minerals" style="display: block; margin-bottom: 10px;">Price</label>
+                <input type="number" pattern="^\d+(\.\d{2})?$" placeholder="0.00" id="price" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <!-- Qty -->
+            <div style="flex: 1; min-width: 250px;">
+                <label for="vitamins-minerals" style="display: block; margin-bottom: 10px;">Quantity</label>
+                <input type="number" class="form-control" min="1" value="1" id="qty" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <!-- Description -->
+            <div style="width: 100%;">
+                <label for="description" style="display: block; margin-bottom: 10px;">Description:</label>
+                <textarea id="description" rows="4" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px;"></textarea>
+            </div>
+
+            <!-- Image Upload -->
+            <div class="col-lg-3">
+                <label>Image 1</label>
+                <input class="form-control b2" type="file" accept="image/*" id="img1">
+            </div>
+
+            <div class="col-lg-3">
+                <label>Image 2</label>
+                <input class="form-control b2" type="file" accept="image/*" id="img2">
+            </div>
+
+            <div class="col-lg-3">
+                <label>Image 3</label>
+                <input class="form-control b2" type="file" accept="image/*" id="img3">
+            </div>
+
+            <!-- Submit Button -->
+            <div style="width: 25%; margin-top: 20px; text-align: center;">
+                <input type="button" onclick="ProductListing();" value="Register your Meal Kit" style="display: block; width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 3px; cursor: pointer;">
+            </div>
+        </div>
+        <br/>
+        <!-- Footer Section Begin -->
+        <footer class="footer spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer__about">
+                            <div class="footer__about__logo">
+                                <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li>Address: Colombo, Sri Lanka</li>
+                                <li>Phone: +94 111 345 654</li>
+                                <li>Email: ogani@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                        <div class="footer__widget">
+                            <h6>Useful Links</h6>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">About Our Shop</a></li>
+                                <li><a href="#">Secure Shopping</a></li>
+                                <li><a href="#">Delivery infomation</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Our Sitemap</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Who We Are</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Innovation</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__widget">
+                            <h6>Join Our Newsletter Now</h6>
+                            <p>Get E-mail updates about our latest shop and special offers.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter your mail">
+                                <button type="submit" class="site-btn">Subscribe</button>
+                            </form>
+                            <div class="footer__widget__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer__copyright">
+                            <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <a href="https://colorlib.com" target="_blank"></a>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                            <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+
+        <!-- Js Plugins -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script src="js/my-account.js"></script>
+
+
+
+    </body>
+
+</html>

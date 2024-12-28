@@ -1,0 +1,225 @@
+/*---------------------
+  Shop Details
+-----------------------*/
+.product-details {
+    padding-top: 80px;
+}
+
+.product__details__pic__item {
+    margin-bottom: 20px;
+}
+
+.product__details__pic__item img {
+    min-width: 100%;
+}
+
+.product__details__pic__slider {
+    position: relative;
+}
+
+.product__details__pic__slider img {
+    cursor: pointer;
+}
+
+.product__details__pic__slider .owl-item img {
+    width: auto; /* Ensure images are not stretched */
+}
+
+/* Remove the owl-carousel class for non-carousel use cases */
+.product__details__pic__slider.owl-carousel {
+    display: none; /* Hide carousel by default */
+}
+
+/* Remove clone related CSS */
+.owl-carousel .owl-stage {
+    transition: none !important; /* Disable transitions */
+}
+
+.owl-carousel .owl-item {
+    transition: none !important; /* Disable transitions for items */
+}
+
+.product__details__pic__slider {
+    display: block; /* Ensure the slider container is displayed */
+}
+
+/* Product Details Text Styles */
+.product__details__text h3 {
+    color: $heading-color-2;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.product__details__rating {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.product__details__rating i {
+    margin-right: -2px;
+    color: #EDBB0E;
+}
+
+.product__details__rating span {
+    color: #dd2222;
+    margin-left: 4px;
+}
+
+.product__details__price {
+    font-size: 30px;
+    color: #dd2222;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.product__details__text p {
+    margin-bottom: 45px;
+}
+
+.primary-btn {
+    padding: 16px 28px 14px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+}
+
+.heart-icon {
+    display: inline-block;
+    font-size: 16px;
+    color: $para-color;
+    padding: 13px 16px 13px;
+    background: $background;
+}
+
+.product__details__text ul {
+    border-top: 1px solid $border;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+.product__details__text ul li {
+    font-size: 16px;
+    color: $normal-color;
+    list-style: none;
+    line-height: 36px;
+}
+
+.product__details__text ul li b {
+    font-weight: 700;
+    width: 170px;
+    display: inline-block;
+}
+
+.product__details__text ul li span samp {
+    color: #dd2222;
+}
+
+.product__details__text ul li .share {
+    display: inline-block;
+}
+
+.product__details__text ul li .share a {
+    display: inline-block;
+    font-size: 15px;
+    color: $normal-color;
+    margin-right: 25px;
+}
+
+.product__details__text ul li .share a:last-child {
+    margin-right: 0;
+}
+
+.product__details__quantity {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.pro-qty {
+    width: 140px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background: $background;
+    margin-bottom: 5px;
+}
+
+.pro-qty input {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: $para-color;
+    border: none;
+    background: $background;
+    text-align: center;
+}
+
+.pro-qty .qtybtn {
+    width: 35px;
+    font-size: 16px;
+    color: $para-color;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.product__details__tab {
+    padding-top: 85px;
+}
+
+.product__details__tab .nav-tabs {
+    border-bottom: none;
+    justify-content: center;
+    position: relative;
+}
+
+
+.product__details__tab .nav-tabs:after {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    height: 1px;
+    width: 370px;
+    background: $border;
+    content: '';
+}
+
+.product__details__tab .nav-tabs li {
+    margin-bottom: 0;
+    margin-right: 65px;
+}
+
+.product__details__tab .nav-tabs li:last-child {
+    margin-right: 0;
+}
+
+.product__details__tab .nav-tabs a {
+    font-size: 16px;
+    color: #999999;
+    font-weight: 700;
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+}
+
+.product__details__tab__desc {
+    padding-top: 44px;
+}
+
+.product__details__tab__desc h6 {
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 26px;
+}
+
+.product__details__tab__desc p {
+    color: #666666;
+}
+
+/* Related Products */
+.related-product {
+    padding-bottom: 30px;
+}
+
+.related__product__title {
+    margin-bottom: 70px;
+}

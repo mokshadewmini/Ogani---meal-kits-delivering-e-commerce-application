@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://community.brave.com/uploads/short-url/8fOCn0UPAg978dmau0MxwQPLx9L.jpeg?dl=1'); /* Replace this with your background image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+background-color: white;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 800px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .image-container {
+            width: 50%;
+            background-image: url('https://i0.wp.com/edibleink.org/wp-content/uploads/2021/01/5-1.png?resize=1024%2C1024&ssl=1'); /* Replace this with your actual image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .signup-form {
+            padding: 40px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .signup-form h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .signup-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: bold;
+font-size: 14px;
+        }
+
+        .signup-form input, 
+        .signup-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .signup-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #8bc34a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .signup-form button:hover {
+            background-color: #7cb342;
+        }
+
+        .or-divider {
+            text-align: center;
+            margin: 20px 0;
+            color: #888;
+        }
+
+        .google-signin {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signin-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #007BFF;
+            text-decoration: none;
+font-size: 14px;
+        }
+
+        .signin-link:hover {
+            text-decoration: underline;
+        }
+
+.app-icon {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-container"></div>
+<div class="signup-form">
+
+
+        </br></br></br></br>
+<img src="https://themewagon.github.io/ogani/img/logo.png" alt="App Icon" class="app-icon">
+            <h3>Create Your Account</h3> 
+
+              <P style="color: #FF0000;" id="message"></P>
+
+
+
+            <label for="name">First Name</label>
+            <input type="text" id="firstName"  placeholder="Enter your first name" >
+            
+            <label for="name">Last Name</label>
+            <input type="text" id="lastName"  placeholder="Enter your last name" >
+
+           
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email"  placeholder="Enter your email" >
+
+            <label for="password">Password</label>
+            <input type="password" id="password"  placeholder="Create a password" >
+
+
+
+            <button type="button" onclick="signUp();">Sign Up</button>
+
+           </br>
+
+            <div class="google-signin">
+                <button type="button" style="background-color: #4285F4; color: white; padding: 10px 0; width: 100%; border-radius: 4px; border: none;">
+                    <img src="https://e7.pngegg.com/pngimages/882/225/png-clipart-google-logo-google-logo-google-search-icon-google-text-logo-thumbnail.png" alt="Google" style="width: 20px; vertical-align: middle; margin-right: 10px;">
+                    Sign Up with Google
+                </button>
+            </div><a href="login.html" class="signin-link">Already have an account? Sign In</a>
+        </div>
+    </div>
+    <script src="js/sign-up.js"></script>
+</body>
+</html>
